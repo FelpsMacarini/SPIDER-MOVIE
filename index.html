@@ -3,22 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendações de Filmes da Marvel</title>
+    <title>Multiverso Marvel</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0D1B2A;
+            color: white;
+        }
+        .hero {
+            background: url('background.jpg') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: #E63946;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .destaques {
+            background-color: #EAE2B7;
+            padding: 40px;
+            color: #1D3557;
+        }
+        .destaques h2 {
+            font-size: 2rem;
+        }
+        .filmes {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .filmes img {
+            width: 150px;
+            border-radius: 10px;
+        }
+        .noticias {
+            background-color: #001233;
+            padding: 40px;
+        }
+        .noticia-container {
+            display: flex;
+            gap: 20px;
+        }
+        .noticia {
+            position: relative;
+        }
+        .noticia img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        .tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            padding: 5px;
+            font-size: 0.8rem;
+        }
+        .placeholder {
+            width: 200px;
+            height: 120px;
+            background-color: #ccc;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Recomendações de Filmes da Marvel</h1>
-        <input type="text" id="search" placeholder="Buscar filmes...">
-        <button id="searchButton">Buscar</button>
+    <header class="hero">
+        <h1>Mergulhe no multiverso Marvel!</h1>
+        <button class="btn">Explorar</button>
     </header>
-    <main id="movies"></main>
-    <script src="script.js"></script>
-
-<!-- comentário -->
-    <!--  -->
-<!--  -->
     
+    <section class="destaques">
+        <h2>Destaques do Multiverso</h2>
+        <p>Explore os filmes que expandem o universo Marvel! Descubra histórias épicas, personagens icônicos e conexões entre realidades alternativas.</p>
+        <div class="filmes">
+            <img src="spiderman.jpg" alt="Homem-Aranha">
+            <img src="multiverse1.jpg" alt="Multiverse 1">
+            <img src="multiverse2.jpg" alt="Multiverse 2">
+            <img src="xmen.jpg" alt="X-Men">
+        </div>
+    </section>
+    
+    <section class="noticias">
+        <h2>Últimas Notícias</h2>
+        <div class="noticia-container">
+            <div class="noticia">
+                <img src="noticia1.jpg" alt="Notícia">
+                <span class="tag">Notícia</span>
+            </div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+    </section>
 </body>
 </html>
-
